@@ -30,19 +30,111 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    padding: 2rem;
+    padding: 1rem;
+}
+/* Add a black background color to the top navigation */
+.navWrapper {
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.navWrapper a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.navWrapper a:hover {
+  background-color: #333;
+  color: #ddd;
 }
 
 .titleWrapper {
     display: flex;
     justify-content: center;
+    h1{
+        font-size: 1.5rem;
+    }
 }
-ol, ul {
-	list-style: none;
+
+.introWrapper {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    .introContent {
+        max-width: 800px;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        p{
+            padding-top: 0.5rem;
+        }
+    }
+
 }
+
+.archivePageWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.archiveListenInstructions {
+    padding: 1.5rem;
+    font-size: 1.10rem;
+}
+.archiveEntryWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 80%;
+    .archiveEntry{
+        border-top: 0.5px solid black;
+        margin: 0.5rem;
+        ol li{
+            list-style-position: inside;
+        }
+    }
+    h3 {
+        font-weight: 700;
+        padding: 1rem 0;
+    }
+}
+
+.contactPageWrapper{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    .contactContent{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 600px;
+        .contactItem{
+            .contactEmail {
+                font-weight: 600;
+            }
+            img {
+                width: 100%;
+                height: auto;
+            }
+            p {
+                padding-bottom: 0.5rem;
+                line-height: 1.5rem;
+                font-size: 1.10rem;
+            }
+        }
+    }
+}
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
