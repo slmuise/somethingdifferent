@@ -160,6 +160,12 @@ body {
         height: auto;
         width: 100%;
     }
+    .blogPic{
+        max-width: 500px;
+        height: auto;
+        display: flex;
+        justify-self: center;
+    }
 }
 
 blockquote, q {
